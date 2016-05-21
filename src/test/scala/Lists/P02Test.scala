@@ -1,4 +1,4 @@
-package Problems
+package Lists
 
 import org.scalatest.FunSuite
 import org.junit.runner.RunWith
@@ -28,3 +28,4 @@ class P02Test extends FunSuite {
     assert(penultimate(List(1,2,3)) === 2)
   }
 }
+

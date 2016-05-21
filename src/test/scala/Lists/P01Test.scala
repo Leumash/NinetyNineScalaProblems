@@ -1,4 +1,4 @@
-package Problems
+package Lists
 
 import org.scalatest.FunSuite
 import org.junit.runner.RunWith

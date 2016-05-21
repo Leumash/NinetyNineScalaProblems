@@ -5,7 +5,7 @@ scala> last(List(1, 1, 2, 3, 5, 8))
 res0: Int = 8
  */
 
-package Problems
+package Lists
 
 object P01 {
   // A is generic
