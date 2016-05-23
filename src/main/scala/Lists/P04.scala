@@ -8,8 +8,14 @@ res0: Int = 6
 package Lists
 
 object P04 {
+  def length[A](list: List[A]): Int = {
+    list.foldLeft(0)((a,_) => a + 1)
+  }
+
+  /*
   def length[A](list: List[A]): Int = list match {
     case Nil => 0
     case _ :: tail => 1 + length(tail)
   }
+  */
 }
