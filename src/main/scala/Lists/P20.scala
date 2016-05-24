@@ -11,7 +11,7 @@ package Lists
 
 object P20 {
   def removeAt[A](pos: Int, list: List[A]): (List[A], A) = {
-    if (list.isEmpty) throw new NoSuchElementException
+    if (list.isEmpty || pos < 0) throw new NoSuchElementException
     else (pos, list) match {
       case (_, Nil) => throw new NoSuchElementException
       case (0, _) => (list.tail, list.head)
