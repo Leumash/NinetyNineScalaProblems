@@ -8,8 +8,8 @@ import P02._
 
 @RunWith(classOf[JUnitRunner])
 class P02Test extends FunSuite {
-  test("penultimate of empty List throws exception") {
-    intercept[Exception] {
+  test("penultimate of empty List throws NoSuchElementException") {
+    intercept[NoSuchElementException] {
       penultimate(List())
     }
   }
