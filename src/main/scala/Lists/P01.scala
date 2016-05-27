@@ -8,15 +8,22 @@ res0: Int = 8
 package Lists
 
 object P01 {
+  def last[A](list: List[A]): A =
+    list.foldLeft(list.head)((_, b) => b)
+
   // A is generic
-  def last2[A](list: List[A]): A =
+  /*
+  def last[A](list: List[A]): A =
     if (list.tail.isEmpty) list.head
     else last(list.tail)
+  */
 
 
+  /*
   def last[A](list: List[A]): A = list match {
     case head :: Nil => head
     case head :: tail => last(tail)
     case Nil => throw new Exception
   }
+  */
 }

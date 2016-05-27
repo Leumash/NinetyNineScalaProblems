@@ -9,8 +9,8 @@ import P01._
 @RunWith(classOf[JUnitRunner])
 class P01Test extends FunSuite {
   //test("pending") (pending)
-  test("last of empty List throws exception") {
-    intercept[Exception] {
+  test("last of empty List throws NoSuchElementException") {
+    intercept[NoSuchElementException] {
       last(List())
     }
   }
